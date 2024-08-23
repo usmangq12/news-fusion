@@ -1,4 +1,4 @@
-### News Fusion
+# News Fusion
 
 This project allows users to select different news sources, categories, and view news based on date. Users can also view detailed information about individual news articles.
 
@@ -11,12 +11,12 @@ This project allows users to select different news sources, categories, and view
 
 ## Getting Started
 
-# Prerequisites
+### Prerequisites
 
 - Node.js installed
 - Docker installed (if running the application inside a Docker container)
 
-# Installation
+### Installation
 
 1. Clone the Repository
 
@@ -47,7 +47,7 @@ NEXT_PUBLIC_NYT_API_BASE_URL=next_public_nyt_api_base_url
 
 Replace the placeholder values with your actual API keys and base URLs.
 
-# Running the Application
+### Running the Application
 
 1. Start the Development Server
 
@@ -63,7 +63,7 @@ yarn run dev
 
 Follow below steps to run the application inside a Docker container:
 
-# Step 1: Install Docker
+### Step 1: Install Docker
 
 For Windows and macOS
 
@@ -75,11 +75,11 @@ For Windows and macOS
    - Once the installation is complete, open Docker Desktop from your Applications or Start Menu.
    - You may be prompted to log in or create a Docker account. You can skip this step and use Docker without logging in.
 
-# Step 2: Set Up Environment Variables
+### Step 2: Set Up Environment Variables
 
 To setup the environment variables you can follow these steps.
 
-# Step 3: Build the Docker Image
+### Step 3: Build the Docker Image
 
 After setting up the environment variables, build the Docker image by running the following command in the project root:
 
@@ -89,10 +89,10 @@ docker build -t news-fusion-app
 
 This command will create a Docker image named news-fusion-app.
 
-# Step 4: Run the Docker Container
+### Step 4: Run the Docker Container
 
 docker run -p 3000:3000 --env-file .env news-fusion-app
 
-# Step 5: Access the Application
+### Step 5: Access the Application
 
 http://localhost:3000
