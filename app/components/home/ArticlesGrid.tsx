@@ -33,6 +33,7 @@ type Props = { type?: string };
 export const ArticlesGrid = ({ type }: Props) => {
   const { sources, categories } = usePreferences();
   const [articles, setArticles] = useState<ArticleType[]>([]);
+
   const fetchArticles = async () => {
     try {
       const numberOfArticles = MAX_NUMBER_OF_ARTICLES / sources.length;

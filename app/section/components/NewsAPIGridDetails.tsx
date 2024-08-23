@@ -4,9 +4,12 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { formatDate } from "@/lib/date";
 import Image from "next/image";
+import { DetailsSkeleton } from "./DetailsSkeleton";
 
 export const NewsAPIGridDetails = () => {
   const { selectedArticle } = useArticleContext();
+
+  if (!selectedArticle) return <DetailsSkeleton />;
 
   return (
     <div className="px-4 py-6 md:px-6 md:py-12 lg:py-16">

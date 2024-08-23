@@ -7,6 +7,7 @@ import { Separator } from "@/components/ui/separator";
 import { formatDate } from "@/lib/date";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { DetailsSkeleton } from "./DetailsSkeleton";
 interface Props {
   id: string | undefined;
 }
@@ -24,6 +25,7 @@ const GuardianNewsDetails = ({ id }: Props) => {
     fetchArticle();
   }, [id]);
 
+  if (!article) return <DetailsSkeleton />;
   return (
     <Card className="prose prose-gray max-w-3xl mx-auto dark:prose-invert p-2">
       <CardHeader>
