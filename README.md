@@ -96,3 +96,6 @@ docker run -p 3000:3000 --env-file .env news-fusion-app
 ### Step 5: Access the Application
 
 http://localhost:3000
+
+### Deployed news-fusion Application URL:
+https://news-fusion-two.vercel.app
